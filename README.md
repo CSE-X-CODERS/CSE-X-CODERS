@@ -1,1 +1,1 @@
-# freshers_site
+# CSE-X-CODERS
