@@ -2,29 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>X-Coders</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X-Coders</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://freshers.ashishshaiju.repl.co/favicon/favicon-32x32.png">
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-    <div id="particles-js">
-        <nav>
-            <h6 class="nav-links">HOME</h6>
-            <h6 class="nav-links">INSTAGRAM</h6>
-            <h6 class="nav-links">NOTE</h6>
-            </nav>
-        <div class="heading">
-            <h2>X CODERS</h2>
-            <h5>since 2021</h5>
-        </div>
+  <div id="particles-js">
+    <nav>
+      <h6 class="nav-links"><span style="color:red;">H</span>OME</h6>
+      <h6 class="nav-links"><span style="color:red;">I</span>NSTAGRAM</h6>
+      <h6 class="nav-links"><span style="color:red;">G</span>ALLERY</h6>
+    </nav>
+    <div class="heading">
+      <h2>X <span style="color:red;">C</span>ODERS</h2>
+      <h5>since 2021</h5>
     </div>
+    <a class="scrollbutton" href="#"></a>
+  </div>
+  <div class="page4">
+    <div class="qr-container"><a href="https://instagram.com/mbc_bang" target="_blank"><img       src="https://freshers.ashishshaiju.repl.co/mbc_bang.jpeg"></a>
+      <h4 class="insta-id"><a href="https://instagram.com/mbc_bang" target="_blank">@mbc_bang</a></h4>
     </div>
+  </div>
+  <div class="gallery">
+    <div class="pic-ctn">
+      <img src="https://i.ibb.co/8MqYCR8/mbc-bang-355450962-768546771582478-2107477078295399421-n.jpg" alt="" class="pic">
+      <img src="https://i.ibb.co/vHW2GCF/mbc-bang-353991181-1439036610205652-72831901091518991-n.jpg" alt="" class="pic">
+      <img src="https://i.ibb.co/4PBtLw9/mbc-bang-346609358-1290619938205399-7945252356899989286-n.jpg" alt="" class="pic">
+      <img src="https://i.ibb.co/ZJgZYjB/mbc-bang-344809425-970230004171195-4075591263914678023-n.jpg" alt="" class="pic">
+      <img src="https://i.ibb.co/m9Q9xLb/mbc-bang-328376630-609310354364665-9131372151421500946-n.jpg" alt="" class="pic">
+    </div>
+  </div>
+  <script src="./scripts/particles.js"></script>
+  <script src="./scripts/app.js"></script>
+  <script>
+    gsap.to(".qr-container",{
+      scrollTrigger:{
+        trigger:".qr-container",
+        scrub:1,
+        toggleActions:"restart none none none"
+      },
+      scale:1.2,
+      duration:1
+    });
 
-
-    <script src="./scripts/particles.js"></script>
-    <script src="./scripts/app.js"></script>
+  </script>
 </body>
 
 </html>
