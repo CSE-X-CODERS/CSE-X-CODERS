@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;800&family=Lexend&family=Poppins:wght@400;700&family=Roboto&display=swap');
 
 body {
-  background-color: black;
-  overflow-x: hidden ;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background: url("../assets/bg.jpg");
+  background-size: cover;
 }
 
 a {
@@ -16,11 +18,12 @@ a {
   box-sizing: border-box;
   color:white;
   text-decoration:none;
+  scroll-behavior:smooth;
 }
 
 @font-face {
   font-family: 'Brushfont';
-  src: url("../fonts/Good Brush.woff") format("truetype");
+  src: url("../assets/Good Brush.woff") format("truetype");
 }
 
 @keyframes ScrollButtonSlide {
@@ -40,10 +43,12 @@ a {
 }
 
 #particles-js {
-  background-color: black;
+  /* background-color: black; */
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* background: url("../assets/bg.jpg");
+  background-blend-mode:darken; */
 }
 
 .heading {
@@ -121,8 +126,7 @@ nav {
   padding:20px;
 }
 .page4{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background-attachment: fixed;
+  /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);*/
 }
 .qr-container{
   margin:10px;
